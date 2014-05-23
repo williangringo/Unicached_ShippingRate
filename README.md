@@ -41,15 +41,15 @@ Link da Extensão: https://github.com/r-martins/magento-pedroteixeira-correios
 
 1. A extensão do Pedro já envia o peso cubado. Logo não é necessário guardar as dimensões em cache. O resultado da cotação dos Correios será provavelmente o mesmo para inúmeras dimensões, de mesmo peso cubado.
 2. A diferença de preço do frete pode ser considerada irrelevante nas seguintes situações:
-	2.1. Peso Inferior a 100 gramas
-	2.2. Valor Declarado Baixo
-	3.3. Mesma Faixa de CEP
+	1. Peso Inferior a 100 gramas
+	2. Valor Declarado Baixo
+	3. Mesma Faixa de CEP
 
 De acordo com a descrição acima, as alterações a seguir podem otimizar muito o armazenamento e a chance de acerto da cache.
 
 Abra o arquivo `/app/code/community/PedroTeixeira/Correios/etc/config.xml`
 
-Localize a tag `<url_ws_correios>` e substitua pelo url a seguir:
+Localize a tag `<url_ws_correios>` e substitua o url dos Correios pelo url a seguir:
 `http://www.yourdomain.com/unicachedrate/standard/`
 
 Em `Sistema > Configurações > Vendas > Configurações de Entrega` substitua o campo URI Pattern pela expressão a seguir:
