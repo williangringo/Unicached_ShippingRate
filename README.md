@@ -1,8 +1,8 @@
 Unicached_ShippingRate
 =====================
 
-Provides a particular shipping rate webserver using Inchoo_Unicache extension.
-For a simple usage, update your request client URI to http://www.yourdomain.com/unicachedrate/standard/.
+Provides a cached webserver for any Magento shipping method, using the Inchoo_Unicache extension.
+For a simple usage, update your request client URL to http://www.yourdomain.com/unicachedrate/standard/.
 
 It's a requirement to have installed Inchoo_Unicache, and not configured the extension for other purposes.
 
