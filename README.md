@@ -23,9 +23,11 @@ Usage:
 ------
 
 In `System > Configuration > Sales > Shipping Settings`
+
 In Webserver URL field, paste the gateway url of your active shipping method. (ex.: `http://ws.correios.com.br/calculador/CalcPrecoPrazo.aspx`)
 
 In `System > Configuration > Sales > Shipping Methods`
+
 Replace the gateway url of your active method by: `http://www.yourdomain.com/unicachedrate/standard/`
 
 If you know Regular Expressions, you can change the cache identifier according to your request uri format.
