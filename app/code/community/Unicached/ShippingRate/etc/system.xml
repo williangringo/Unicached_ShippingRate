@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<config>
+	<sections>
+		<shipping translate="label" module="shipping">
+			<groups>
+				<unicachedrate translate="label">
+					<label>Unicached Shipping Rate</label>
+					<sort_order>1</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<url translate="label">
+							<label>Webserver URL</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</url>
+						<cache_timeout translate="label">
+							<label>Cache Timeout</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>Expiration time of the cached data (in hours).</comment>
+						</cache_timeout>
+						<uri_pattern translate="label">
+							<label>URI Pattern</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>30</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>The "REQUEST_URI" is used as identifier of the cached data. Here you can put a Regular Expression to modify that identifier.</comment>
+						</uri_pattern>
+						<uri_replacement translate="label">
+							<label>URI Replacement</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>40</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>Replacement for the URI Pattern.</comment>
+						</uri_replacement>
+					</fields>
+				</unicachedrate>
+			</groups>
+		</shipping>
+	</sections>
+</config>

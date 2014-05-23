@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Unicached_ShippingRate>
+			<active>true</active>
+			<codePool>community</codePool>
+			<depends>
+				<Inchoo_Unicache />
+			</depends>
+		</Unicached_ShippingRate>
+	</modules>
+</config>
