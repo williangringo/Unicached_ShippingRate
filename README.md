@@ -34,6 +34,8 @@ If you know Regular Expressions, you can change the cache identifier according t
 The cache won't work as expected until you remove some special characters of the identifier.
 
 
+
+
 Dica de Configuração para o método PedroTeixeira_Correios:
 ----------------------------------------------------------
 
@@ -53,7 +55,13 @@ Localize a tag `<url_ws_correios>` e substitua o url dos Correios pelo url a seg
 `http://www.yourdomain.com/unicachedrate/standard/`
 
 Em `Sistema > Configurações > Vendas > Configurações de Entrega` substitua o campo URI Pattern pela expressão a seguir:
+
 `/\??([[:alpha:]]+=[^&]*)&([[:alpha:]]+=[^&]*)&[[:alpha:]]+=([0-9]+\.[0-9])[0-9]*&([[:alpha:]]+=[^&]*)&([[:alpha:]]+=[0-9]{5})[0-9]{3}&([[:alpha:]]+=[^&]*)&([[:alpha:]]+=[^&]*)&([[:alpha:]]+=[^&]*)&([[:alpha:]]+=[^&]*)&([[:alpha:]]+=[^&]*)&([[:alpha:]]+=[^&]*)&([[:alpha:]]+=[^&]*)/`
 
 Em seguida substitua o campo URI Replacement pelo seguinte texto:
+
 `$2|nVlPeso=$3|$5`
+
+As chaves de identificação do cache deverão aparecer da seguinte forma:
+
+`nCdServico=40436,41068,81019|nVlPeso=0.2|sCepDestino=51030&nCdEmpresa=11111111&sDsSenha=11111111`
